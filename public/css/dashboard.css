@@ -1,163 +1,1447 @@
-.container {
-  max-width: unset;
-}
-body {
-  font-family: 'Lexend Deca', sans-serif;
-  background: #FAFAFA;
-}
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: unset;
+  }
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    background: #FAFAFA;
+  }
 
-#icon-why-us {
-  width: 100%;
-  height: 252px; 
-  background: white; 
-  border-radius: 8px; 
-  border: 0.50px #BBCEE2 solid; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 24px; 
-  display: inline-flex;
-}
+  .topnav {
+    display: none;
+  }
 
-#icon-why-us:hover {
-  background: #2562A0;
-}
+  .navbar .megamenu{ padding: 1rem; }
 
-#icon-why-us:hover #title-why-us {
-  color: white;
-}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
 
-#icon-why-us:hover #desc-why-us {
-  color: white;
-}
+  .dropdown-content .header {
+    padding: 16px;
+    color: black;
+    font-weight: 800;
+  }
 
-#title-why-us {
-  color: #0D2238; 
-  font-size: 16px; 
-  font-family: Lexend Deca;
-  font-weight: 500;
-  line-height: 28px;
-  word-wrap: break-word;
-}
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  #icon-why-us {
+    width: 100%;
+    height: 252px; 
+    background: white; 
+    border-radius: 8px; 
+    border: 0.50px #BBCEE2 solid; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 24px; 
+    display: inline-flex;
+  }
+  
+  #icon-why-us:hover {
+    background: #2562A0;
+  }
+  
+  #icon-why-us:hover #title-why-us {
+    color: white;
+  }
+  
+  #icon-why-us:hover #desc-why-us {
+    color: white;
+  }
+  
+  #title-why-us {
+    color: #0D2238; 
+    font-size: 16px; 
+    font-family: Lexend Deca;
+    font-weight: 500;
+    line-height: 28px;
+    word-wrap: break-word;
+  }
+  
+  #desc-why-us {
+    width: 247px;
+    text-align: center;
+    color: #163B60;
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #icon-industri-produk {
+    width: 289px;
+    height: 272px;
+    background: white;
+    border-radius: 8px;
+    border: 0.50px #BBCEE2 solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    display: inline-flex;
+  }
+  
+  #icon-industri-produk:hover {
+    height: 389px;
+    background: #2562A0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #icon-industri-produk:hover #logo-industri-produk  {
+    margin-top: 30px;
+    filter: brightness(0) invert(1); 
+  }
+  #icon-industri-produk:hover #title-industri-produk  {
+    margin-top: 24px;
+    color: white;
+  }
+  #icon-industri-produk:hover #desc-industri-produk  {
+    margin-top: 16px;
+    color: white;
+  }
+  #icon-industri-produk:hover #btn-katalog-industri-produk  {
+    display: block;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    font-family: Lexend Deca;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2562A0;
+  }
+  #icon-industri-produk:hover #btn-detail-industri-produk  {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border-color: white;
+    font-family: Lexend Deca;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  #logo-industri-produk {
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    position: absolute
+  }
 
-#desc-why-us {
-  width: 247px;
-  text-align: center;
-  color: #163B60;
-  font-size: 14px;
-  font-family: DM Sans;
-  font-weight: 400;
-  word-wrap: break-word;
-}
+  #detailWhyUs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex
+  }
+  
+  #title-industri-produk {
+    color: #0D2238;
+    font-size: 20px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    line-height: 28px;
+    word-wrap: break-word
+  }
+  
+  #desc-industri-produk {
+    width: 249px;
+    text-align: center;
+    color: #0D2238;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-weight: 400;
+    word-wrap: break-word
+  }
+  
+  #btn-katalog-industri-produk {
+    display: none;
+  }
+  
+  #btn-detail-industri-produk {
+    display: none;
+  }
+  
+  .whatsapp-button{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 999;
+  }
+  .whatsapp-button.active {
+    opacity: 1;
+  }
+  
+  .my-float{
+  margin-top:16px;
+  }
 
-#icon-industri-produk {
-  width: 289px;
-  height: 272px;
-  background: white;
-  border-radius: 8px;
-  border: 0.50px #BBCEE2 solid;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  display: inline-flex;
-}
+  #carouselExampleControls {
+    top: 0;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+  }
+  #industriProduk {
+    height: 1200px; 
+    padding-top: 73px;
+    padding-bottom: 72.86px;
+    padding-left: 91px;
+    padding-right: 91.63px;
+    right: 0px;
+    left: 0px;
+    top: 1858px;
+  }
+  #whyUs {
+    top: 810px;
+    padding-top: 86px;
+    padding-bottom: 87px;
+    left: 0px;
+    right:0px;
+    position: absolute;
+    gap: 30px;
+    flex-direction: column;
+    display: inline-flex; 
+  }
 
-#icon-industri-produk:hover {
-  height: 389px;
-  background: #2562A0;
-  justify-content: flex-start;
-  align-items: center;
-}
+  #imgWhyUs {
+    width: 571px; 
+    height: 537px; 
+    border-radius: 16px;
+    justify-content: center; 
+  }
+  #contentWhyUs {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 56px;
+    display: inline-flex;
+  }
 
-#icon-industri-produk:hover #logo-industri-produk  {
-  margin-top: 30px;
-  filter: brightness(0) invert(1); 
-}
-#icon-industri-produk:hover #title-industri-produk  {
-  margin-top: 24px;
-  color: white;
-}
-#icon-industri-produk:hover #desc-industri-produk  {
-  margin-top: 16px;
-  color: white;
-}
-#icon-industri-produk:hover #btn-katalog-industri-produk  {
-  display: block;
-  width: 100%;
-  background: white;
-  border-radius: 8px;
-  font-family: Lexend Deca;
-  font-size: 14px;
-  font-weight: 600;
-  color: #2562A0;
-}
-#icon-industri-produk:hover #btn-detail-industri-produk  {
-  display: block;
-  width: 100%;
-  border-radius: 8px;
-  border-color: white;
-  font-family: Lexend Deca;
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-}
+  #listWhyUs {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    display: inline-flex;
+    padding-left: 30px;
+    padding-right: 30px
+  }
 
-#logo-industri-produk {
-  width: 40px;
-  height: 40px;
-  left: 0px;
-  top: 0px;
-  position: absolute
-}
+  #kenapaHarusKami {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8%;
+    display: flex;
+    margin-left: 35px;
+  }
 
-#title-industri-produk {
-  color: #0D2238;
-  font-size: 20px;
-  font-family: Lexend Deca;
-  font-weight: 500;
-  line-height: 28px;
-  word-wrap: break-word
-}
+  #kenapaHarusKamiText {
+    width: 544px;
+    color: #0D2238;
+    font-size: 56px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    line-height: 64px;
+    word-wrap: break-word
+  }
+  #detailTextHarusKami {
+    width: 544px;
+    color: #163B60;
+    font-size: 20px;
+    font-family: DM Sans;
+    font-weight: 400;
+    line-height: 40px;
+    word-wrap: break-word
+  }
 
-#desc-industri-produk {
-  width: 249px;
-  text-align: center;
-  color: #0D2238;
-  font-size: 12px;
-  font-family: DM Sans;
-  font-weight: 400;
-  word-wrap: break-word
-}
+  #belowImageWhyUs {
+    width: 544px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 72px;
+    display: inline-flex
+  }
 
-#btn-katalog-industri-produk {
-  display: none;
-}
+  #industriProdukText {
+    text-align: center;
+    color: #2562A0;
+    font-size: 24px;
+    font-family: Lexend Deca;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word
+  }
 
-#btn-detail-industri-produk {
-  display: none;
-}
+  #industriProdukHeaderDiv {
+    top: 69px;
+  }
 
-.whatsapp-button{
-position:fixed;
-width:60px;
-height:60px;
-bottom:40px;
-right:40px;
-background-color:#25d366;
-color:#FFF;
-border-radius:50px;
-text-align:center;
-font-size:30px;
-box-shadow: 2px 2px 3px #999;
-opacity: 0;
-transition: opacity 0.3s;
-z-index: 999;
-}
-.whatsapp-button.active {
-  opacity: 1;
-}
+  #industriProdukDesc {
+    width: 930px;
+    text-align: center;
+    color: #0D2238;
+    font-size: 48px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    line-height: 64px;
+    word-wrap: break-word
+  }
 
-.my-float{
-margin-top:16px;
+  #client {
+    padding-top: 73px;
+    padding-bottom: 72.86px;
+    padding-left: 91px;
+    padding-right: 91.63px;
+    left: 0px;
+    top: 3081px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+  }
+
+  #industriProdukDescLong {
+    width: 920px;
+    text-align: center;
+    color: #163B60;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 400;
+    line-height: 40px;
+    word-wrap: break-word
+  }
+
+  #divListIndustriProduk {
+    top: 364px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 54px;
+    display: inline-flex
+  }
+
+  #contentDetailIndustriProduk {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 21px;
+    display: inline-flex
+  }
+
+  #industriProdukBlue {
+    height: 1200px;
+  }
+
+  #article {
+    top: 3500px;
+    max-width: 100%;
+    padding-top: 100px;
+    padding-bottom: 62.50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    display: inline-flex
+  }
+
+  #articleTitle {
+    text-align: center;
+    color: #0D2238;
+    font-size: 48px;
+    font-family: Lexend Deca;
+    font-weight: 600;
+    word-wrap: break-word
+  }
+
+  #clientTitle {
+    text-align: center;
+    color: #2562A0;
+    font-size: 24px;
+    font-family: Lexend Deca;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word
+  }
+
+  #clientDesc {
+    text-align: center;
+    color: #0D2238;
+    font-size: 48px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    line-height: 64px;
+    word-wrap: break-word
+  }
+
+  #articleText {
+    text-align: center;
+    color: #0D2238;
+    font-size: 48px;
+    font-family: Lexend Deca;
+    font-weight: 600;
+    word-wrap: break-word
+  }
+
+  #articleList {
+    align-self: stretch;
+    height: 466px;
+    gap: 4%;
+    justify-content: center;
+    align-items: flex-start;
+    display: inline-flex
+  }
+
+  #articleCard {
+    width: 400px;
+    height: 466px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    border-radius: 10px;
+  }
+
+  #articleBody {
+    width: 400px;
+    height: 207px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    display: flex
+  }
+
+  #articleDate {
+    color: #90A2B2;
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+  }
+
+  #articleTitle {
+    width: 347px;
+    color: #1D242A;
+    font-size: 20px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    text-align: left;
+    word-wrap: break-word
+  }
+
+  #articleDesc {
+    width: 347px;
+    color: #5C7184;
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: 400;
+    word-wrap: break-word
+  }
+
+  #sendMail {
+    width: 100%;
+    height: 900px;
+    left: 0;
+    right: 0;
+    top: 4280px;
+    position: absolute;
+    display: inline;
+  }
+
+  #hubungiKamiLayout {
+    left: 0;
+    top: 176px;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex
+  }
+
+  #hubungiKamiTitle {
+    color: white;
+    font-size: 16px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    word-wrap: break-word
+  }
+
+  #hubungiKamiDetailLayout {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex
+  }
+
+  #hubungiKamiDesc {
+    width: 620px;
+    color: white;
+    font-size: 64px;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    word-wrap: break-word
+  }
+
+  #hubungiKamiDescLong {
+    width: 620px;
+    height: 87px;
+    color: white;
+    font-size: 20px;
+    font-family: DM Sans;
+    font-weight: 400;
+    word-wrap: break-word
+  }
+
+  #layoutMail {
+    top: 73px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 23px;
+    display: inline-flex
+  }
+
+  #footer {
+    width: 100%;
+    height: 319px;
+    left: 0px;
+    top: 4908px;
+    position: absolute
+  }
+
+  #layoutDetailMail {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    display: inline-flex
+  }
+
+  #inputMail {
+    width: 100%;
+    height: 52px;
+    background: white;
+    border-radius: 8px;
+  }
+
+  #name {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #phone {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #email {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #company {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #message {
+    width: 612px;
+  }
+
+  #bluePost {
+    height: 900px;
+  }
+
+  #formPost {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  #submitEmail {
+    width: 614px;
+    height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #1C4A78;
+    color: #FAFDFF;
+    border-radius: 8px;
+    border: transparent;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    font-size: 16px;
+    font-family: Lexend Deca;
+    font-weight: 600;
+  }
+
+  #imgFooterDiv {
+    left: 80px;
+    top: 63px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 42px;
+    display: inline-flex
+  }
+
+  #imgFooter {
+    width: 232px;
+    height: 82px
+  }
+
+  #sosmed {
+    width: 530px;
+    top: 63px;
+    right: 0;
+    margin-right: 30px;
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex
+  }
+
+  #address {
+    width: 450px;
+    left: 80px;
+    top: 184px;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    word-wrap: break-word
+  }
+
+  #followUs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex
+  }
+
+  #contactUs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex
+  }
+
+  #blackBackgroundFooter {
+    width: 100%;
+    height: 319px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #120B06
+  }
+
+  #textFollowUs {
+    color: white;
+    font-size: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    word-wrap: break-word
+  }
+
+  #followUsImageDiv {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    display: inline-flex
+  }
+
+  #contactUsText {
+    color: white;
+    font-size: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    word-wrap: break-word
+  }
+
+  #textPhone {
+    width: 130px;
+    height: 22px;
+    color: white;
+    font-size: 16px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    word-wrap: break-word
+  }
+}
+/* mobile tessttt */
+@media only screen and (max-width: 425px) {
+  #navbar-web {
+    display: none;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #carouselExampleControls {
+    left: 0px;
+    right: 0px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav button {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  
+  /* Style the active link (or home/logo) */
+  .active-mobile {
+    background-color: white;
+    color: white;
+  }
+
+  #like {
+    display: none;
+  }
+
+  .whatsapp-button{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:30px;
+    right:30px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    padding-top: 8px;
+    box-shadow: 2px 2px 3px #999;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 999;
+    }
+
+    .whatsapp-button.active {
+      opacity: 1;
+    }
+    #industriProduk {
+      padding-top: 73px;
+      padding-bottom: 72.86px;
+      padding-left: 91px;
+      padding-right: 91.63px;
+      right: 0;
+      left: 0px;
+      top: 2028px;
+    }
+
+    #whyUs {
+      top: 230px;
+      padding-top: 86px;
+      padding-bottom: 87px;
+      left: 0px;
+      right:0px;
+      flex-direction: column;
+      position: absolute;
+      align-items: center;
+      display: inline-flex; 
+    }
+
+    #imgWhyUs {
+      max-width: 350px;
+      border-radius: 16px;
+    }
+
+    #kenapaHarusKami {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #contentWhyUs {
+      max-width: 100%;
+      align-self: stretch;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 56px;
+      display: inline-flex;
+    }
+
+    #detailWhyUs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      display: flex
+    }
+
+    #kenapaHarusKamiText {
+      color: #0D2238;
+      font-size: 26px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      line-height: 34px;
+      text-align: center;
+      word-wrap: break-word
+    }
+
+    #belowImageWhyUs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 72px;
+    }
+
+    #detailTextHarusKami {
+      max-width: 100%;
+      color: #163B60;
+      font-size: 12px;
+      font-family: DM Sans;
+      font-weight: 400;
+      line-height: 20px;
+      word-wrap: break-word;
+      text-align: center;
+    }
+
+    #listWhyUs {
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 32px;
+      display: inline-flex;
+      padding-left: 20px;
+      padding-right: 20px
+    }
+
+    #icon-why-us {
+      width: 100%;
+      height: 252px; 
+      background: white; 
+      border-radius: 8px; 
+      border: 0.50px #BBCEE2 solid; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 14px; 
+      display: inline-flex;
+    }
+
+    #title-why-us {
+      color: #0D2238; 
+      font-size: 15px; 
+      font-family: Lexend Deca;
+      font-weight: 500;
+      line-height: 18px;
+      word-wrap: break-word;
+    }
+
+    #desc-why-us {
+      text-align: center;
+      color: #163B60;
+      font-size: 14px;
+      padding: 10px;
+      font-family: DM Sans;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    #industriProdukText {
+      text-align: center;
+      color: #2562A0;
+      font-size: 16px;
+      font-family: Lexend Deca;
+      font-weight: 600;
+      line-height: 14px;
+      word-wrap: break-word
+    }
+
+    #industriProdukHeaderDiv {
+      top: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    #industriProdukDesc {
+      width: 100%;
+      text-align: center;
+      color: #0D2238;
+      font-size: 22px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      line-height: 44px;
+      word-wrap: break-word
+    }
+
+    #industriProdukDescLong {
+      width: 100%;
+      text-align: center;
+      color: #163B60;
+      font-size: 13px;
+      font-family: DM Sans;
+      font-weight: 400;
+      line-height: 20px;
+      word-wrap: break-word
+    }
+
+    #divListIndustriProduk {
+      top: 240px;
+      width: 100%;
+      position: absolute;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 54px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: inline-flex
+    }
+
+    #contentDetailIndustriProduk {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      display: inline-flex
+    }
+
+    #icon-industri-produk {
+      width: 100%;
+      height: 272px;
+      background: white;
+      border-radius: 8px;
+      border: 0.50px #BBCEE2 solid;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 24px;
+      display: inline-flex;
+    }
+    
+    #icon-industri-produk:hover {
+      height: 389px;
+      background: #2562A0;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    #icon-industri-produk:hover #logo-industri-produk  {
+      margin-top: 30px;
+      filter: brightness(0) invert(1); 
+    }
+    #icon-industri-produk:hover #title-industri-produk  {
+      margin-top: 24px;
+      color: white;
+    }
+    #icon-industri-produk:hover #desc-industri-produk  {
+      margin-top: 16px;
+      color: white;
+    }
+    #icon-industri-produk:hover #btn-katalog-industri-produk  {
+      display: block;
+      width: 100%;
+      background: white;
+      border-radius: 8px;
+      font-family: Lexend Deca;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2562A0;
+    }
+    #icon-industri-produk:hover #btn-detail-industri-produk  {
+      display: block;
+      width: 100%;
+      border-radius: 8px;
+      border-color: white;
+      font-family: Lexend Deca;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+    }
+    
+    #logo-industri-produk {
+      width: 40px;
+      height: 40px;
+      left: 0px;
+      top: 0px;
+      position: absolute
+    }
+    
+    #title-industri-produk {
+      color: #0D2238;
+      font-size: 20px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      line-height: 28px;
+      word-wrap: break-word
+    }
+    
+    #desc-industri-produk {
+      width: 100%;
+      text-align: center;
+      color: #0D2238;
+      font-size: 12px;
+      font-family: DM Sans;
+      font-weight: 400;
+      word-wrap: break-word
+    }
+    
+    #btn-katalog-industri-produk {
+      display: none;
+    }
+    
+    #btn-detail-industri-produk {
+      display: none;
+    }
+
+    #client {
+      padding-top: 73px;
+      padding-bottom: 72.86px;
+      padding-left: 10px;
+      padding-right: 10px;
+      left: 0px;
+      top: 4731px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex
+    }
+
+    #industriProdukBlue {
+      height: 2750px;
+    }
+
+    #article {
+      top: 5000px;
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 62.50px;
+      padding-left: 5px;
+      padding-right: 5px;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      display: inline-flex
+    }
+
+    #clientTitle {
+      text-align: center;
+      color: #2562A0;
+      font-size: 20px;
+      font-family: Lexend Deca;
+      font-weight: 600;
+      line-height: 14px;
+      word-wrap: break-word
+    }
+
+    #clientDesc {
+      text-align: center;
+      color: #0D2238;
+      font-size: 22px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      word-wrap: break-word
+    }
+
+    #articleText {
+      text-align: center;
+      color: #0D2238;
+      font-size: 28px;
+      font-family: Lexend Deca;
+      font-weight: 600;
+      word-wrap: break-word
+    }
+
+    #articleList {
+      width: 100%;
+      align-self: stretch;
+      height: 466px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 39px;
+      display: inline-flex
+    }
+
+    #articleCard {
+      width: 100%;
+      height: 466px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      display: inline-flex;
+      border-radius: 10px;
+    }
+
+    #articleBody {
+      width: 100%;
+      height: 207px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 12px;
+      display: flex
+    }
+
+    #articleDate {
+      color: #90A2B2;
+      font-size: 12px;
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      line-height: 20px;
+      word-wrap: break-word
+    }
+
+    #articleTitle {
+      width: 100%;
+      color: #1D242A;
+      font-size: 20px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      word-wrap: break-word
+    }
+
+    #articleDesc {
+      width: 100%;
+      color: #5C7184;
+      font-size: 14px;
+      font-family: DM Sans;
+      font-weight: 400;
+      word-wrap: break-word
+    }
+
+    #sendMail {
+      width: 100%;
+      height: 900px;
+      left: 0;
+      top: 6680px;
+      position: relative;
+    }
+
+    #hubungiKamiLayout {
+      top: 20px;
+      position: relative;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 32px;
+      display: inline-flex
+    }
+
+    #hubungiKamiTitle {
+      width: 100%;
+      color: white;
+      font-size: 16px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      letter-spacing: 0.64px;
+      text-align: center;
+      word-wrap: break-word
+    }
+
+    #hubungiKamiDetailLayout {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      display: flex
+    }
+
+    #hubungiKamiDesc {
+      width: 100%;
+      color: white;
+      font-size: 25px;
+      font-family: Lexend Deca;
+      font-weight: 500;
+      word-wrap: break-word
+    }
+
+    #hubungiKamiDescLong {
+      width: 100%;
+      height: 87px;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      font-family: DM Sans;
+      font-weight: 400;
+      word-wrap: break-word
+    }
+
+    #layoutMail {
+      width: 100%;
+      position: relative;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 23px;
+      display: inline-flex
+    }
+
+    #formPost {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20;
+    }
+
+    #footer {
+      width: 100%;
+      height: 319px;
+      top: 7658px;
+      position: absolute
+    }
+
+    #layoutDetailMail {
+      width: 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 30px;
+      display: inline-flex
+    }
+
+    #inputMail {
+      width: 100%;
+      height: 52px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    #name {
+      width: 350px;
+    }
+
+    #phone {
+      width: 350px;
+    }
+
+    #email {
+      width: 350px;
+    }
+
+    #company {
+      width: 350px;
+    }
+
+    #message {
+      width: 350px;
+    }
+
+    #bluePost {
+      height: 1200px;
+    }
+
+    #submitEmail {
+      width: 350px;
+      height: 64px;
+      background: #1C4A78;
+      color: #FAFDFF;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      border: transparent;
+      gap: 10px;
+      display: inline-flex;
+      font-size: 16px;
+      font-family: Lexend Deca;
+      font-weight: 600;
+    }
+
+    #imgFooterDiv {
+      width: 100%;
+      top: 30px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      gap: 42px;
+      display: inline-flex
+    }
+    
+    #imgFooter {
+      width: 131px;
+      height: 45px
+    }
+
+    #sosmed {
+      width: 100%;
+      position: relative;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      display: inline-flex
+    }
+
+    #address {
+      width: 100%;
+      position: relative;
+      color: white;
+      font-size: 12px;
+      margin-top: 45px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: Plus Jakarta Sans;
+      font-weight: 600;
+      word-wrap: break-word
+    }
+
+    #followUs {
+      margin-top: 20px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      display: inline-flex
+    }
+
+    #contactUs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      display: inline-flex
+    }
+
+    #blackBackgroundFooter {
+      width: 100%;
+      height: 419px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #120B06
+    }
+
+    #textFollowUs {
+      color: white;
+      font-size: 14px;
+      font-family: Plus Jakarta Sans;
+      font-weight: 500;
+      word-wrap: break-word
+    }
+
+    #followUsImageDiv {
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 30px;
+      display: inline-flex
+    }
+
+    #contactUsText {
+      color: white;
+      font-size: 14px;
+      font-family: Plus Jakarta Sans;
+      font-weight: 500;
+      word-wrap: break-word
+    }
+
+    #textPhone {
+      height: 22px;
+      color: white;
+      font-size: 16px;
+      font-family: Plus Jakarta Sans;
+      font-weight: 400;
+      word-wrap: break-word
+    }
 }

@@ -1,0 +1,207 @@
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: unset;
+  }
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    background: #FAFAFA;
+  }
+  .transparent-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-color: #136EF0;
+    margin-left: -10px;
+  }
+
+  .btn-image {
+    margin-right: 10px;
+    max-width: 20px; /* Adjust as needed */
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  #footer {
+    width: 100%;
+    height: 319px;
+    left: 0px;
+    margin-top: 140px;
+    position: absolute
+  }
+
+  #layoutDetailMail {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    display: inline-flex
+  }
+
+  #inputMail {
+    width: 100%;
+    height: 52px;
+    background: white;
+    border-radius: 8px;
+  }
+
+  #name {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #phone {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #email {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #company {
+    width: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #message {
+    width: 612px;
+  }
+
+  #bluePost {
+    height: 900px;
+  }
+
+  #formPost {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  #submitEmail {
+    width: 614px;
+    height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #1C4A78;
+    color: #FAFDFF;
+    border-radius: 8px;
+    border: transparent;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    font-size: 16px;
+    font-family: Lexend Deca;
+    font-weight: 600;
+  }
+
+  #imgFooterDiv {
+    left: 80px;
+    top: 63px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 42px;
+    display: inline-flex
+  }
+
+  #imgFooter {
+    width: 232px;
+    height: 82px
+  }
+
+  #sosmed {
+    width: 530px;
+    top: 63px;
+    right: 0;
+    margin-right: 30px;
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex
+  }
+
+  #address {
+    width: 450px;
+    left: 80px;
+    top: 184px;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    word-wrap: break-word
+  }
+
+  #followUs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex
+  }
+
+  #contactUs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex
+  }
+
+  #blackBackgroundFooter {
+    width: 100%;
+    height: 319px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #120B06
+  }
+
+  #textFollowUs {
+    color: white;
+    font-size: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    word-wrap: break-word
+  }
+
+  #followUsImageDiv {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    display: inline-flex
+  }
+
+  #contactUsText {
+    color: white;
+    font-size: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    word-wrap: break-word
+  }
+
+  #textPhone {
+    width: 130px;
+    height: 22px;
+    color: white;
+    font-size: 16px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    word-wrap: break-word
+  }
+}

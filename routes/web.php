@@ -46,3 +46,10 @@ Route::get('/welcome', function () {
 Route::get('/download/{filename}', [DashboardController::class, 'download'])->name('download');
 
 Route::post('/send-email', [DashboardController::class, 'sendEmail'])->name('send-email');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//admin
+
