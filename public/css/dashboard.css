@@ -11,7 +11,11 @@
     display: none;
   }
 
-  .navbar .megamenu{ padding: 1rem; }
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0; padding: 2rem; }
+
+  .ul {
+    margin-top: 10px;
+  }
 
   .dropdown-content {
     display: none;

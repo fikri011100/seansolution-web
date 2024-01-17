@@ -36,7 +36,7 @@
             <div style="justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
                 <a href="{{url('/')}}" style="text-decoration: none;"><div style="text-align: center; color: white; font-size: 18px; font-family: Lexend Deca; font-weight: 600; line-height: 24px; word-wrap: break-word">Beranda</div></a>
                 <a href="{{url('/aboutus')}}" style="text-decoration: none;"><div style="text-align: center; color: white; font-size: 18px; font-family: Lexend Deca; font-weight: 600; line-height: 24px; word-wrap: break-word">Tentang Kami</div></a>
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><div style="color: white; font-size: 18px; font-family: Lexend Deca; font-weight: 600; line-height: 24px; word-wrap: break-word">Industri & Produk</div></a>
+                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"><div style="color: white; font-size: 18px; font-family: Lexend Deca; font-weight: 600; line-height: 24px; word-wrap: break-word">Industri & Produk</div></a>
                 <!-- Dropdown menu -->
                 <div class="dropdown-menu megamenu" role="menu">
 					<div class="row g-3">
@@ -59,9 +59,9 @@
 							<div class="col-megamenu">
 								<h6 class="title"></h6>
 								<ul class="list-unstyled">
-									<li><a href="#">Lubricant</a></li>
-									<li><a href="#">Cleaner</a></li>
-									<li><a href="#">Adhesive & Thread Locker</a></li>
+									<li><button id="industri-produk">Lubricant</button></li>
+									<li><button id="industri-produk">Cleaner</button></li>
+									<li><button id="industri-produk">Adhesive & Thread Locker</button></li>
 									<li><a href="#">Auto Lubricator</a></li>
 									<li><a href="#">Thread Compound</a></li>
 								</ul>
